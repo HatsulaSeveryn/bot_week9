@@ -41,7 +41,7 @@ def change_handler(name: str, phone: str, *args):
     CONTACTS[name] = phone
 
 
-@input_error(('Please enter command as follows: phone {name}'))
+@input_error('Please enter command as follows: phone {name}')
 def phone_handler(name, *args):
     # Function that prints phone number
     print(f'{name} phone is {CONTACTS[name]}')
